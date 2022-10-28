@@ -7,30 +7,30 @@ body {
   color: var(--text-color);
   font-family: var(--main-family);
 }
-li {list-style: none;
+li {
+  list-style: none;
 }
 ul {
-padding: 0;}
+  padding: 0;
+}
 
 nav li {
   list-style: none;
   margin-top: 48px;
- 
 }
 h1 {
   font-size: 72px;
- 
-  ;
+  color: var(--hover-color)
 }
 h2 {
   font-size: 24px;
 }
-p {font-size: 18px;}
+p {
+  font-size: 18px;
+}
 hr {
   border: none;
   border-top: 3px dotted black;
-
-  
 }
 
 .nav-link {
@@ -38,38 +38,25 @@ hr {
   font-size: 16px;
   font-family: var(--main-family);
 }
-.nav-link:hover {color: var(--hover-color);}
+.nav-link:hover {
+  color: var(--hover-color);
+}
 .active {
   color: var(--hover-color);
 }
-.hero-image {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 150px;
-  margin-top: 70px;
-}
-.hero-text {
-  position: absolute;
 
-  left: 25%;
-  right: 25%;
-  top: 40%;
-  color: white;
+.hero-text {
+  color: var(--hover-color);
   text-align: center;
   font-family: var(--main-family);
 }
-.homepage-image {
-  margin: 50px;
-  margin-bottom: 30px;
-width: 460px;
-height: 310px;
-}
+.homepage-image { width: 85%;}
 .homepage-jam-title {
   text-decoration: none;
   font-size: var(--main-family);
   font-size: 28px;
   color: var(--text-color);
-  padding-left: 45px;
+
   transition: all 100ms ease-in-out;
 }
 
@@ -83,18 +70,61 @@ height: 310px;
 .social-link:hover {
   color: var(--hover-color);
 }
-.cooker-photo {height: 350px;
-  width:500px;
+.cooker-photo {
+  width: 85%;
 }
-.name {font-size: 64px;
-line-height: 1;}
-.follow-links {font-size: 18px;
-font-weight: bold;}
-.recipe-image {  display: block;
+.name {
+  font-size: 64px;
+  
+
+}
+.follow-links {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recipe-image {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
-  width: 40%;}
-  .recipe-collection-name {font-size: 36px;}
-.step
-{color:#F65282}
+  width: 40%;
+}
+.recipe-collection-name {
+  font-size: 36px;
+}
+.step {
+  color: #f65282;
+}
+.contact-info-bullet {
+  color: var(--hover-color);
+  font-size: 18px;
+}
+.contact-info {
+  font-size: 18px;
+}
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .cooker-photo {display: block; margin-left: auto;
+  margin-right: auto;}
+  .homepage-jam-title {font-size:18px;
+  }
+ .secondary-container {
+  margin-top: auto!important;
+  margin-left: auto!important;
+margin-right: auto!important;
+padding-left: 0!important;}
+.homepage-row {margin-bottom: 0!important;}
+.homepage-image {width:100%;}
+.name {font-size: 40px;}
+
+
+
+
+}
